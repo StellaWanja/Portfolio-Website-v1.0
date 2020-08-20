@@ -158,7 +158,7 @@ nav{
     color: #9fc131;
 }
 
-.btn{
+.btn-intro{
     color: #9fc131;
     border: 2px solid #9fc131;
     padding: 10px;
@@ -166,9 +166,11 @@ nav{
     transition-duration: 0.3s ;
 }
 
-.btn:hover{
+.btn-intro:hover{
     background-color: #393e46;
     cursor: pointer;
+    text-decoration: none;
+    color: #9fc131;
     transform: scale(1.1);
 }
 
@@ -182,17 +184,21 @@ nav{
 
 .btn_down:hover{
     color: #eeeeee;
+    text-decoration: none;
 }
 
 /*section-b*/
 #section-b{
     height: 50vh;
-    margin: 50px;
+    margin: 50px 50px 0 50px;
 }
 
 #section-b h1{
     text-align: left;
     margin-left: 30px;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: capitalize;
 }
 
 .about{
@@ -215,7 +221,7 @@ nav{
     margin-top: 20px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 768px) {
     #section-b h1{
         margin-left: 5px;
     }
@@ -241,32 +247,143 @@ nav{
 #section-c h1{
     text-align: left;
     margin-left: 30px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
+@media screen and (max-width: 768px){
+     #section-c{
+         margin-top: 20%;
+     }
 }
 
-.cards ul li{
-    list-style: none;
+/*section-d*/
+#section-d{
+    margin: 50px;
 }
 
-@media screen and (max-width: 650px) {
-    #section-c{
-        margin-top: 50%;
+#section-d h1{
+    text-align: left;
+    margin-left: 30px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*web section*/
+.projects{
+    padding: 10px 50px;
+}
+
+.projects h5{
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.web-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    box-shadow: 3px 3px 5px 5px #d9d8d8;
+    margin-bottom: 50px;
+}
+
+.web-card img{
+    width: 100%;
+}
+
+.web-card h4{
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.web-card p{
+    margin-bottom: 20px;
+}
+
+.web-card > div{
+    padding: 50px;
+}
+
+.web-card:nth-child(even) img{
+    order: 2;
+}
+
+.btn-demo{
+    background-color: #222831;
+    padding: 10px;
+    border-radius: 5px;
+    color: #eeeeee;
+}
+
+.btn-code{
+    background-color: #9fc131;
+    padding: 10px;
+    border-radius: 5px;
+    color: #eeeeee;
+    margin-left: 10px;
+}
+
+.btn-behance{
+    background-color: #053eff;
+    padding: 10px;
+    border-radius: 5px;
+    color: #eeeeee;
+}
+
+.btn-dribbble{
+    background-color: #ea4c89;
+    padding: 10px;
+    border-radius: 5px;
+    color: #eeeeee;
+    margin-left: 10px;
+}
+
+.btn-demo:hover, .btn-code:hover, .btn-behance:hover, .btn-dribbble:hover{
+    color: #eeeeee;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.link-see-more{
+    color: #222831;
+    font-weight: bold;
+    text-align: right;
+    border-bottom: 2px solid #222831;
+}
+
+.link-see-more:hover{
+    color: #9fc131;
+    text-decoration: none;
+    border-bottom: 2px solid #9fc131;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-dribbble, .btn-behance{
+        display: block;
+        margin: 10px;
+        width: 50%;
     }
-    #section-c h1{
-        margin-left: 5px;
+    #section-d{
+        margin-top: -10%;
     }
-    .cards{
-        display: flex;
-        margin-top: 5px;
-        flex-direction: column;
+}
+
+@media screen and (max-width:600px) {
+    #section-d{
+        margin-top: 100%;
     }
-    .card-list{
-        padding: 10px;
+    .web-card {
+        display: block;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .btn-dribbble, .btn-behance{
+        display: block;
+        margin: 10px;
+        width: 50%;
     }
 }

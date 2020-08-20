@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
     <title>StylaDes</title>
 </head>
 <body>
@@ -31,76 +33,202 @@
 
 <!--    section-a-->
     <section id="section-a">
-        <div id="first-section">
+        <div id="first-section" data-aos="fade-up">
             <h1>Hi, I'm <span id="name">StylaDes</span></h1>
             <p>Web Developer & Logo Designer</p>
-            <div class="btn">
-                <p>Get In Touch</p>
-            </div>
+            <a href="" class="btn-intro">Get In Touch</a>
         </div>
         <a href="#section-b" class="btn_down">
             <i class="fa fa-angle-down" aria-hidden="true"></i>
         </a>
     </section>
 
-<!--    section-b-->
+<!--    about section-->
     <section id="section-b">
-        <h1>About Me</h1>
+        <h1 data-aos="fade-right">About Me</h1>
         <div class="about">
-            <div class="about-txt">
+            <div class="about-txt" data-aos="fade-right">
                 <p>Hi, I'm Stylades. I'm a web developer and logo designer passionate about crafting beautiful designs.
                     I enjoy creating beautiful interfaces and experiences through beautiful code. My goal is to always
                     learn and build seamless user experiences through clean and efficient code.</p>
                 <p id="extra">When I'm not in front of a computer screen, I'm probably knitting, crocheting or reading a book.</p>
             </div>
-            <img src="images/about-img.svg" alt="About StylaDes">
+            <img src="images/about-img.svg" alt="About StylaDes" data-aos="fade-left">
         </div>
     </section>
 
-<!--    section-c-->
-    <section id="section-c">
+<!--    skills section-->
+    <section id="section-c" data-aos="fade-right">
         <h1>Skills</h1>
-        <div class="cards">
-            <div class="card-list">
-                <h3>Languages & Frameworks</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript (ES6)</li>
-                    <li>PHP</li>
-                    <li>Kotlin</li>
-                </ul>
+
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-header">Languages & Frameworks</div>
+                <div class="card-body">
+                    <p class="card-text">HTML5</p>
+                    <p class="card-text">CSS3</p>
+                    <p class="card-text">Bootstrap</p>
+                    <p class="card-text">JavaScript</p>
+                    <p class="card-text">PHP</p>
+                    <p class="card-text">Kotlin</p>
+                </div>
             </div>
 
-            <div class="card-list">
-                <h3>Tools</h3>
-                <ul>
-                    <li>Git & Github</li>
-                    <li>Chrome DevTools</li>
-                </ul>
+            <div class="card">
+                <div class="card-header">Tools</div>
+                <div class="card-body">
+                    <p class="card-text">Git & Github</p>
+                    <p class="card-text">Chrome DevTools</p>
+                </div>
             </div>
 
-            <div class="card-list">
-                <h3>Databases</h3>
-                <ul>
-                    <li>Firebase</li>
-                    <li>MySQL</li>
-                </ul>
+            <div class="card">
+                <div class="card-header">Databases</div>
+                <div class="card-body">
+                    <p class="card-text">Firebase</p>
+                    <p class="card-text">MySQL</p>
+                </div>
             </div>
 
-            <div class="card-list">
-                <h3>Design</h3>
-                <ul>
-                    <li>Adobe Illustrator</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe After Effects</li>
-                    <li>Figma</li>
-                </ul>
+            <div class="card">
+                <div class="card-header">Design</div>
+                <div class="card-body">
+                    <p class="card-text">Adobe Illustrator</p>
+                    <p class="card-text">Adobe Photoshop</p>
+                    <p class="card-text">Adobe After Effects</p>
+                    <p class="card-text">Figma</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
+<!--    portfolio section-->
+    <section id="section-d">
+        <h1 data-aos="fade-right">Portfolio</h1>
+
+<!--    websites-->
+        <div class="projects">
+            <h5 data-aos="fade-right">Websites</h5>
+            <div class="web-card"  data-aos="fade-left">
+                <img src="images/coffee-mug.png" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Web projects developed in html, css, javascript, jquery and bootstrap.</p>
+                    <a href="" class="btn-demo">Demo</a>
+                    <a href="" class="btn-code">Code</a>
+                </div>
+            </div>
+
+            <div class="web-card" data-aos="fade-right">
+                <img src="images/Mockup.jpg" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dolor ipsum iste natus neque, nisi non perferendis ratione reiciendis!</p>
+                    <a href="" class="btn-demo">Demo</a>
+                    <a href="" class="btn-code">Code</a>
+                </div>
+            </div>
+
+            <div class="web-card" data-aos="fade-left">
+                <img src="images/girl-holding-flowers.png" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dolor ipsum iste natus neque, nisi non perferendis ratione reiciendis!</p>
+                    <a href="" class="btn-demo">Demo</a>
+                    <a href="" class="btn-code">Code</a>
+                </div>
+            </div>
+            <a href="" class="link-see-more" data-aos="fade-right">See More Projects <i class="fa fa-arrow-right"></i></a>
+        </div>
+
+<!--    logos-->
+        <div class="projects">
+            <h5 data-aos="fade-right">Logos</h5>
+            <div class="web-card"  data-aos="fade-left">
+                <img src="images/coffee-mug.png" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Web projects developed in html, css, javascript, jquery and bootstrap.</p>
+                    <a href="" class="btn-behance">Behance</a>
+                    <a href="" class="btn-dribbble">Dribbble</a>
+                </div>
+            </div>
+
+            <div class="web-card" data-aos="fade-right">
+                <img src="images/Mockup.jpg" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dolor ipsum iste natus neque, nisi non perferendis ratione reiciendis!</p>
+                    <a href="" class="btn-behance">Behance</a>
+                    <a href="" class="btn-dribbble">Dribbble</a>
+                </div>
+            </div>
+
+            <div class="web-card" data-aos="fade-left">
+                <img src="images/girl-holding-flowers.png" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dolor ipsum iste natus neque, nisi non perferendis ratione reiciendis!</p>
+                    <a href="" class="btn-behance">Behance</a>
+                    <a href="" class="btn-dribbble">Dribbble</a>
+                </div>
+            </div>
+            <a href="" class="link-see-more" data-aos="fade-right">See More Projects <i class="fa fa-arrow-right"></i></a>
+        </div>
+
+<!--    illustrations-->
+        <div class="projects">
+            <h5 data-aos="fade-right">Illustrations</h5>
+            <div class="web-card"  data-aos="fade-left">
+                <img src="images/coffee-mug.png" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Web projects developed in html, css, javascript, jquery and bootstrap.</p>
+                    <a href="" class="btn-behance">Behance</a>
+                    <a href="" class="btn-dribbble">Dribbble</a>
+                </div>
+            </div>
+
+            <div class="web-card" data-aos="fade-right">
+                <img src="images/Mockup.jpg" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dolor ipsum iste natus neque, nisi non perferendis ratione reiciendis!</p>
+                    <a href="" class="btn-behance">Behance</a>
+                    <a href="" class="btn-dribbble">Dribbble</a>
+                </div>
+            </div>
+
+            <div class="web-card" data-aos="fade-left">
+                <img src="images/girl-holding-flowers.png" alt="">
+                <div>
+                    <h4>Web Project 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias deserunt dolor ipsum iste natus neque, nisi non perferendis ratione reiciendis!</p>
+                    <a href="" class="btn-behance">Behance</a>
+                    <a href="" class="btn-dribbble">Dribbble</a>
+                </div>
+            </div>
+            <a href="" class="link-see-more" data-aos="fade-right">See More Projects <i class="fa fa-arrow-right"></i></a>
+        </div>
+
+    </section>
+
+<!--    bootstrap js-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<!--    animate img-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 4,
+        duration: 1000
+    });
+</script>
+
+<!--    local js file-->
+<script src="script.js"></script>
+
 </body>
 </html>
