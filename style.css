@@ -136,6 +136,7 @@ nav{
 #section-a{
     background-color: #222831;
     height: 90vh;
+    max-width: 100%;
 }
 
 #first-section{
@@ -154,7 +155,7 @@ nav{
     text-transform: capitalize;
 }
 
-#first-section h1 #name{
+#first-section h1 #brand{
     color: #9fc131;
 }
 
@@ -387,3 +388,105 @@ nav{
         width: 50%;
     }
 }
+
+/*form-section*/
+#form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-text{
+    text-align: center;
+}
+
+#form-text h1{
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#form-text p{
+    line-height: 10px;
+}
+
+.fields{
+    margin-top: 10px;
+    box-shadow: 3px 3px 5px 5px #d9d8d8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.field{
+    margin-bottom: 20px;
+}
+
+.field label{
+    font-weight: bold;
+}
+
+.field input{
+    border: 2px;
+    border-bottom: 2px solid #222831;
+}
+
+.field textarea{
+    border: 2px solid #222831;
+}
+
+#submit-btn{
+    background-color: #222831;
+    border-radius: 5px;
+    border: #222831;
+    color: #eeeeee;
+    padding: 7px;
+    transition: 0.3s ease-in-out;
+}
+
+#submit-btn:hover{
+    background-color: #9fc131;
+    border: #9fc131;
+}
+
+.footer{
+    background-color: #222831;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#social-media{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#social-media a{
+    color: #eeeeee;
+    padding-left: 20px;
+    font-size: 1.25em;
+}
+
+#social-media a:hover{
+    color: #9fc131;
+}
+
+.footer p{
+    color: #eeeeee;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*go up btn*/
+#go-up-btn{
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    color: #9fc131;
+    font-size: 2em;
+}
+
+
+
