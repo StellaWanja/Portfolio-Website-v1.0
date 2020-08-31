@@ -244,6 +244,9 @@ nav{
 }
 
 @media screen and (max-width: 380px){
+    #section-b{
+        width: 100%;
+    }
     .about img{
         visibility: hidden;
     }
