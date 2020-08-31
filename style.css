@@ -188,49 +188,6 @@ nav{
     text-decoration: none;
 }
 
-.modal-header h5{
-    font-size: 1.25em;
-    font-weight: bold;
-    color: #222831;
-}
-
-.modal-fields {
-    padding: 20px;
-}
-
-.modal-field{
-    margin-bottom: 20px;
-}
-
-.modal-field label{
-    font-weight: bold;
-    color: #222831;
-}
-
-.modal-field input{
-    border: 2px;
-    border-bottom: 2px solid #222831;
-}
-
-.modal-field textarea{
-    border: 2px solid #222831;
-}
-
-.modal-close{
-    background-color: #222831;
-    color: #eeeeee;
-}
-
-.modal-submit{
-    background-color: #9fc131;
-    color: #eeeeee;
-}
-
-.modal-close:hover, .modal-submit:hover{
-    color: #eeeeee;
-    opacity: 0.8;
-}
-
 /*section-b*/
 #section-b{
     height: 50vh;
@@ -537,5 +494,4 @@ nav{
     color: #9fc131;
     font-size: 2em;
 }
-
 
