@@ -161,6 +161,7 @@ nav{
 .btn-intro{
     color: #9fc131;
     border: 2px solid #9fc131;
+    background-color: #222831;
     padding: 10px;
     margin-top: 20px;
     transition-duration: 0.3s ;
@@ -185,6 +186,49 @@ nav{
 .btn_down:hover{
     color: #eeeeee;
     text-decoration: none;
+}
+
+.modal-header h5{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #222831;
+}
+
+.modal-fields {
+    padding: 20px;
+}
+
+.modal-field{
+    margin-bottom: 20px;
+}
+
+.modal-field label{
+    font-weight: bold;
+    color: #222831;
+}
+
+.modal-field input{
+    border: 2px;
+    border-bottom: 2px solid #222831;
+}
+
+.modal-field textarea{
+    border: 2px solid #222831;
+}
+
+.modal-close{
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+.modal-submit{
+    background-color: #9fc131;
+    color: #eeeeee;
+}
+
+.modal-close:hover, .modal-submit:hover{
+    color: #eeeeee;
+    opacity: 0.8;
 }
 
 /*section-b*/
@@ -439,7 +483,7 @@ nav{
     border: 2px solid #222831;
 }
 
-#submit-btn{
+.submit-btn{
     background-color: #222831;
     border-radius: 5px;
     border: #222831;
@@ -448,7 +492,7 @@ nav{
     transition: 0.3s ease-in-out;
 }
 
-#submit-btn:hover{
+.submit-btn:hover{
     background-color: #9fc131;
     border: #9fc131;
 }

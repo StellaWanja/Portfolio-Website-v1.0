@@ -36,7 +36,53 @@
         <div id="first-section" data-aos="fade-up">
             <h1>Hi, I'm <span id="brand">StylaDes</span></h1>
             <p>Web Developer & Logo Designer</p>
-            <a href="" class="btn-intro">Get In Touch</a>
+<!--            modal-->
+            <a href="" type="button" class="btn-intro" data-toggle="modal" data-target="#exampleModal">
+                Get In Touch
+            </a>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" name="modal-contact" method="post" data-netlify="true">
+                                <div class="modal-fields">
+                                    <div class="modal-field">
+                                        <label for="names">Name:</label><br>
+                                        <input type="text" name="name" id="names" class="form-control" placeholder="Enter your name">
+                                    </div>
+
+                                    <div class="modal-field">
+                                        <label for="emails">Email:</label><br>
+                                        <input type="text" name="email" id="emails" class="form-control" placeholder="Enter your email" required>
+                                    </div>
+
+                                    <div class="modal-field">
+                                        <label for="msgs">Message:</label><br>
+                                        <textarea name="message" id="msgs" rows="7" class="form-control" placeholder="Enter your message" required></textarea>
+                                    </div>
+
+                                    <!--                recaptcha-->
+                                    <div class="modal-field">
+                                        <div data-netlify-recaptcha="true"></div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn modal-close" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn modal-submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <a href="#section-b" class="btn_down">
             <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -132,7 +178,7 @@
             <div class="web-card" data-aos="fade-left">
                 <img src="images/flavourfoods.jpg" alt="">
                 <div>
-                    <h4>Archie</h4>
+                    <h4>Flavour Foods</h4>
                     <p>Flavour Foods website is my first website creation, and is developed using HTML5, CSS3 and Bootstrap.</p>
                     <a href="https://stellawanja.github.io/Flavour-Foods/" class="btn-demo" target="_blank">Demo</a>
                     <a href="https://github.com/StellaWanja/Flavour-Foods" class="btn-code" target="_blank">Code</a>
@@ -187,7 +233,7 @@
                     <div data-netlify-recaptcha="true"></div>
                 </div>
 
-                <button type="submit" id="submit-btn">Submit</button>
+                <button type="submit" class="submit-btn">Submit</button>
             </div>
         </form>
     </section>
