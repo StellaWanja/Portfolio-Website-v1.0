@@ -136,7 +136,6 @@ nav{
 #section-a{
     background-color: #222831;
     height: 90vh;
-    max-width: 100%;
 }
 
 #first-section{
@@ -254,8 +253,14 @@ nav{
 
 @media screen and (max-width: 768px){
      #section-c{
-         margin-top: 20%;
+         margin-top: 50%;
      }
+}
+
+@media screen and (max-width: 600px){
+    .card-deck{
+        display:block;
+    }
 }
 
 /*section-d*/
@@ -368,7 +373,7 @@ nav{
         width: 50%;
     }
     #section-d{
-        margin-top: -10%;
+        margin-top: 30%;
     }
 }
 
@@ -469,6 +474,7 @@ nav{
 
 #social-media a:hover{
     color: #9fc131;
+    text-decoration: none;
 }
 
 .footer p{
@@ -487,6 +493,5 @@ nav{
     color: #9fc131;
     font-size: 2em;
 }
-
 
 
