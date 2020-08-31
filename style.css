@@ -264,6 +264,12 @@ nav{
     }
 }
 
+@media screen and (max-width: 380px){
+    #section-c{
+        padding-top: 40%;
+    }
+}
+
 /*section-d*/
 #section-d{
     margin: 50px;
@@ -388,10 +394,42 @@ nav{
 }
 
 @media screen and (max-width:480px) {
+    #section-d{
+        padding-top: 30%;
+    }
     .btn-dribbble, .btn-behance{
         display: block;
-        margin: 10px;
-        width: 50%;
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 380px){
+    #section-d{
+        padding-top: 100%;
+    }
+    #section-d h1{
+        margin-left: 0;
+    }
+    .projects{
+        padding: 0;
+    }
+    .web-card{
+        width: 100%;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+    .web-card h4{
+        margin-top: 20px;
+    }
+    .web-card > div{
+        padding: 0;
+    }
+    .btn-demo, .btn-code{
+        display: block;
+        margin: 10px 0;
+        text-align: center;
     }
 }
 
@@ -486,6 +524,19 @@ nav{
     justify-content: center;
 }
 
+@media screen and (max-width: 380px){
+    #form-text{
+        margin: 0 15px;
+    }
+    #form-text p{
+        line-height: 20px;
+    }
+    .fields{
+        box-shadow: none;
+        padding: 10px;
+    }
+}
+
 /*go up btn*/
 #go-up-btn{
     position: fixed;
@@ -494,4 +545,5 @@ nav{
     color: #9fc131;
     font-size: 2em;
 }
+
 
