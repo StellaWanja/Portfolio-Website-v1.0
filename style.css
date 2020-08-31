@@ -136,6 +136,7 @@ nav{
 #section-a{
     background-color: #222831;
     height: 90vh;
+    width: 100%;
 }
 
 #first-section{
@@ -553,9 +554,4 @@ nav{
     font-size: 2em;
 }
 
-@media screen and (max-width: 380px){
-    #go-up-btn{
-        overflow: hidden;
-    }
-}
 
