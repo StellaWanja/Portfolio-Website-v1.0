@@ -273,6 +273,7 @@ nav{
 @media screen and (max-width: 380px){
     #section-c{
         padding-top: 40%;
+        padding-bottom: 100%;
     }
 }
 
