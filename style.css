@@ -239,6 +239,14 @@ nav{
     }
 }
 
+@media screen and (max-width: 380px){
+    #section-b h1{
+        margin-left: 0;
+    }
+    .about img{
+        visibility: hidden;
+    }
+}
 /*section-c*/
 #section-c{
     height: 50vh;
@@ -264,11 +272,6 @@ nav{
     }
 }
 
-@media screen and (max-width: 380px){
-    #section-c{
-        padding-top: 40%;
-    }
-}
 
 /*section-d*/
 #section-d{
