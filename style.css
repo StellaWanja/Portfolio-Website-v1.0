@@ -239,6 +239,12 @@ nav{
     }
 }
 
+@media screen and (max-width: 380px){
+    .about img{
+        visibility: hidden;
+    }
+}
+
 /*section-c*/
 #section-c{
     height: 50vh;
