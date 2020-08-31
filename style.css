@@ -137,9 +137,11 @@ nav{
     background-color: #222831;
     height: 90vh;
     width: 100%;
+    overflow: hidden;
 }
 
 #first-section{
+    width: 100%;
     color: #eeeeee;
     display: flex;
     flex-direction: column;
@@ -178,6 +180,7 @@ nav{
 
 .btn_down{
     color: #bebebe;
+    width: 100%;
     display: flex;
     font-size: 40px;
     text-decoration: none;
@@ -192,6 +195,7 @@ nav{
 /*section-b*/
 #section-b{
     height: 50vh;
+    width: 90%;
     margin: 50px 50px 0 50px;
 }
 
@@ -546,12 +550,12 @@ nav{
 }
 
 /*go up btn*/
-#go-up-btn{
-    position: fixed;
-    bottom: 40px;
-    right: 50px;
-    color: #9fc131;
-    font-size: 2em;
-}
+/*#go-up-btn{*/
+/*    position: fixed;*/
+/*    bottom: 40px;*/
+/*    right: 50px;*/
+/*    color: #9fc131;*/
+/*    font-size: 2em;*/
+/*}*/
 
 
